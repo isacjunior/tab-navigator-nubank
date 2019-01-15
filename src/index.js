@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { StatusBar } from 'react-native'
-import { BottomNavigator } from './components'
+import { BottomNavigator, SwiperSlide } from './components'
 import { HomeContainer, SwiperContainer, Swiper } from './styled'
 
 class App extends Component {
@@ -10,9 +10,14 @@ class App extends Component {
         <StatusBar
           barStyle="light-content"
         />
-        <SwiperContainer>
-          <Swiper />
-        </SwiperContainer>
+        <SwiperSlide>
+          <SwiperContainer>
+            <Swiper />
+          </SwiperContainer>
+          <SwiperContainer>
+            <Swiper />
+          </SwiperContainer>
+        </SwiperSlide>
         <BottomNavigator />
       </HomeContainer>
     )

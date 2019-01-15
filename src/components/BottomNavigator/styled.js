@@ -1,7 +1,9 @@
 import styled from 'styled-components'
+import { Dimensions } from 'react-native'
+
+const padding = Dimensions.get('window').width * 0.05
 
 export const ScrollNavigator = styled.ScrollView`
-  height: 120;
 `
 
 export const NavigatorContent = styled.View`
@@ -9,7 +11,7 @@ export const NavigatorContent = styled.View`
 
 export const ViewNavigator = styled.View`
   flex-direction: row;
-  margin-left: 25px;
+  margin-left: ${padding};
 `
 
 export const NavigatorBox = styled.TouchableOpacity`

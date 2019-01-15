@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { ScrollNavigator, NavigatorContent, NavigatorBox, Title, Icon, ViewNavigator } from './styled'
-import { indicator, deposit, transfer, ajust, card, payment, block } from '../../assets/home'
+import { indicator, deposit, transfer, ajust, card, payment, block } from '../../core/assets/home'
 
 class BottomNavigator extends Component {
   state = {
